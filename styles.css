@@ -235,7 +235,9 @@ header {
 
 .hero-image img {
     border-radius: 10px;
-    height: 84.5vh;
+    width: 80%;
+    height: auto;
+    max-height: 84vh;
     margin-left: 7vw;
     margin-top: -30px;
 }
@@ -1205,7 +1207,7 @@ animation: scroll 2s ease-in-out infinite;
 
 .about-image img {
     border-radius: 10px;
-    max-height: 80vh;
+    max-height: 84vh;
     height:auto;
     width:70vw;
     margin-top: -5rem;
