@@ -206,7 +206,7 @@ header {
 /* === Hero Section === */
 .hero {
     padding-top: 150px;
-    padding-bottom: 100px;
+    padding-bottom: 0px;
     position: relative;
     overflow: hidden;
     background: #F8F4F1;  /* Soft Cream background */
@@ -237,7 +237,7 @@ header {
     border-radius: 10px;
     width: 80%;
     height: auto;
-    max-height: 84vh;
+    max-height: 100vh;
     margin-left: 7vw;
     margin-top: -30px;
 }
@@ -311,7 +311,7 @@ animation: float 9s ease-in-out infinite;
 /* Scroll Down Indicator */
 .scroll-down {
 position: absolute;
-bottom: 40px;
+bottom: 0px;
 left: 50%;
 transform: translateX(-50%);
 display: flex;
@@ -622,6 +622,7 @@ animation: scroll 2s ease-in-out infinite;
   /* features section */
 .features {
     background-color:  #fdf6f9;
+    padding-top: 5rem;
 }
 
 .features-grid {
@@ -1192,6 +1193,8 @@ animation: scroll 2s ease-in-out infinite;
 /* === About Section === */
 .about{
   margin-bottom: 20px;
+  padding-bottom: 4.5%;
+  padding-top: 5%;
 }
 .about-container {
     display: flex;
@@ -1207,7 +1210,7 @@ animation: scroll 2s ease-in-out infinite;
 
 .about-image img {
     border-radius: 10px;
-    max-height: 84vh;
+    max-height: 100vh;
     height:auto;
     width:70vw;
     margin-top: -5rem;
@@ -2374,8 +2377,8 @@ width:80vw
   padding: 60px 20px 30px;
   border-radius: 20px 20px 0 0;
   width: 18%;
-  height: auto; /* Fixed height for consistency */
-  min-height: 250px;
+  height: auto !important; /* Fixed height for consistency */
+  /* min-height: 250px; */
   position: relative;
   transition: all 0.3s ease;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -2412,9 +2415,11 @@ width:80vw
 
 .pillar h4 {
   margin-top: 30px;
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: #5c2244;
   line-height: 1.4;
+  text-align: center;
+  
 }
 
 /* -------------------- */
@@ -2422,8 +2427,14 @@ width:80vw
 /* -------------------- */
 @media (min-width: 1440px) {
   .pillar {
-    height: 250px; /* fixed height for MacBook Pro & extra-large screens */
+    height: auto; /* fixed height for MacBook Pro & extra-large screens */
   }
+  .pillar h4 {
+  margin-top: 30px;
+  font-size: 1rem;
+  color: #5c2244;
+  line-height: 1.4;
+}
 }
 
 
