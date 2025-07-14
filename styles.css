@@ -776,13 +776,14 @@ animation: scroll 2s ease-in-out infinite;
   color: black;
   margin-bottom: 40px;
   position: relative;
-  display: inline-block;
-  text-align: center !important;
-  margin-left: 7rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
 }
 
 
-.symptoms-title::before {
+/* .symptoms-title::before {
   content: '';
   position: absolute;
   width: 60px;
@@ -793,7 +794,7 @@ animation: scroll 2s ease-in-out infinite;
   left: -20px;
   z-index: -1;
   text-align: center;
-}
+} */
 
 .symptoms-subtitle {
   font-size: 1.2rem;
@@ -881,7 +882,7 @@ animation: scroll 2s ease-in-out infinite;
 }
 
 .symptom-name {
-  font-size: 1.2rem;
+  font-size: 1.2rem !important;
   font-weight: 600;
   color: #161115;
   margin-bottom: 10px;
@@ -973,13 +974,20 @@ animation: scroll 2s ease-in-out infinite;
 }
 
 /* media queries */
+
+@media (min-width: 1440px) {
+  .symptom-name {
+    font-size: 1rem;
+  }
+}
+
 @media (max-width: 1080px) {
   .symptoms-checker {
     padding: 60px 20px;
   }
 
   .symptoms-title {
-    font-size: 2.2rem;
+    font-size: 2rem;
     margin-left: 0px;
     margin-top: -0.2rem;
     margin-bottom:-0.1rem
@@ -1197,7 +1205,9 @@ animation: scroll 2s ease-in-out infinite;
 
 .about-image img {
     border-radius: 10px;
-    height:80vh;
+    max-height: 80vh;
+    height:auto;
+    width:70vw;
     margin-top: -5rem;
     /* box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.1); */
     /* background-color: #fdf6f9; */
@@ -1354,7 +1364,7 @@ color: #9c5283;
 border-radius: 20px;
 font-size: 15px;
 margin-bottom: 15px;
-width: 6.5vw;
+width: 6rem;
 text-align: center;
 font-weight: 700;
 }
@@ -1365,7 +1375,8 @@ margin-bottom: 10px;
 
 .resource-card p {
 margin-bottom: 20px;
-width:40vw
+width:100%;
+
 }
 
 .resource-link {
@@ -1383,6 +1394,12 @@ transition: transform 0.3s ease;
 
 .resource-link:hover i {
 transform: translateX(5px);
+}
+
+@media (min-width: 1440px) {
+  .resources-grid {
+    grid-template-columns: repeat(2, 1fr); /* allow more columns */
+  }
 }
 
 
@@ -2332,7 +2349,6 @@ width:80vw
   font-size: 2.3rem;
   color: #050405;
   margin-bottom: 20px;
-  
 }
 
 .pillars-header p {
@@ -2344,34 +2360,36 @@ width:80vw
 .pillars-container {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: stretch; /* Ensure same height */
   max-width: 1000px;
   margin: 0 auto;
-  gap: 10px;
-  flex-wrap: wrap;
+  gap: 20px;
+  flex-wrap: nowrap; /* Prevent wrapping on large screens */
 }
 
 .pillar {
   background: linear-gradient(180deg, #ffd4ec, #fff);
-  padding: 60px 20px 30px; /* increased top padding */
+  padding: 60px 20px 30px;
   border-radius: 20px 20px 0 0;
   width: 18%;
-  min-height: 230px;
+  height: auto; /* Fixed height for consistency */
+  min-height: 250px;
   position: relative;
   transition: all 0.3s ease;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  overflow: visible; /* ensures circle isn't clipped */
+  overflow: visible;
   margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
-
-/* Removed hover effect */
 
 .pillar:hover {
   transform: translateY(0px);
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
   background: linear-gradient(180deg, #fcfcfc, #ffd4ec);
 }
-
 
 .pillar-circle {
   width: 60px;
@@ -2385,7 +2403,7 @@ width:80vw
   justify-content: center;
   font-size: 1.4rem;
   position: absolute;
-  top: -40px; /* fixed positioning */
+  top: -40px;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -2400,6 +2418,12 @@ width:80vw
 /* -------------------- */
 /* RESPONSIVE MEDIA QUERIES */
 /* -------------------- */
+@media (min-width: 1440px) {
+  .pillar {
+    height: 250px; /* fixed height for MacBook Pro & extra-large screens */
+  }
+}
+
 
 /* For tablets and smaller laptops (max 1024px) */
 @media (max-width: 1024px) {
@@ -2422,6 +2446,7 @@ width:80vw
   .pillar {
     width: 22%;
     padding: 50px 15px 25px;
+    height:auto
   }
 }
 
