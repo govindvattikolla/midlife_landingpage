@@ -168,7 +168,7 @@ header {
 }
 
 .btn-hero {
-  background-color: #9c2d66;
+  background-color: #9c5283;
   color: #ffffff;
   font-size: 1rem;
   padding: 15px 20px;
@@ -1586,7 +1586,7 @@ width:80vw
   
   .cta-text {
     font-weight: bold;
-    color: #8a2458;
+    color: #000000;
     font-size: 1.2rem;
   }
   
@@ -1594,7 +1594,7 @@ width:80vw
     display: inline-block;
     margin-top: 0.7rem;
     padding: 0.75rem 1.5rem;
-    background-color: #8a2458;
+    background-color: #9c5283;
     color: #fff;
     font-size: 1rem;
     text-decoration: none;
@@ -1603,7 +1603,7 @@ width:80vw
   }
   
   .call-button:hover {
-    background-color: #8a2458;
+    background-color: #9b2d66;
   }
   /* media queries */
   /* For medium screens (up to 1024px) */
@@ -1870,7 +1870,7 @@ width:80vw
   }
   
   .coaching-invite-wrapper strong {
-    color: #8a2458;
+    color: #9c5283;
   }
   
   .cta-box {
@@ -1902,7 +1902,7 @@ width:80vw
   .cta-subtext {
     margin-top: 0.8rem;
     font-size: 1rem;
-    color: #5a2c40;
+    color: black;
     margin-left:1rem
   }
   
@@ -2003,7 +2003,7 @@ width:80vw
   .program-content h2 span {
     display: block;
     font-size: 2.4rem;
-    color: #5a2c40;
+    color: #000000;
   }
   
   .program-content p {
@@ -2021,7 +2021,7 @@ width:80vw
   .program-button {
     display: inline-block;
     padding: 0.9rem 2rem;
-    background-color: #8a2458;
+    background-color: #9c5283;
     color: white;
     font-size: 1.1rem;
     font-weight: bold;
@@ -2168,7 +2168,7 @@ width:80vw
   }
 
   .transform-journey .heading h2 {
-    font-size: 2.2rem;
+    font-size: 1.8rem;
     color: #9c5283;
     margin-bottom: 10px;
   }
@@ -2588,7 +2588,7 @@ width:80vw
 }
 
 .feel-good-section strong {
-  color: #b0184d;
+  color: #000000;
 }
 
 .feel-good-section .cta-btn {
